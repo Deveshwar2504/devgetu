@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Devgetu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="webpage2.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">Devgetu</div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">DESIGN</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger" id="hamburger">
+            ☰
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-left">
+            <h1>Web Design <br><span>Development</span> <br>Course</h1>
+
+            <p>
+                Devgetu is a tech-driven software company specializing in full-stack development,
+                cloud solutions & digital transformation services.  
+                We provide high-quality training programs to skill students and professionals.
+            </p>
+
+            <button class="cn">JOIN US</button>
+        </div>
+
+        <div class="form">
+            <h2>Login Here</h2>
+            <input type="email" placeholder="Enter Email Here">
+            <input type="password" placeholder="Enter Password Here">
+            <a href="#" class="btnn">Login</a>
+
+            <p class="link">Don't have an account?<br>
+                <a href="#">Sign Up</a> here
+            </p>
+
+            <p class="liw">Log in with</p>
+
+            <div class="social-icons">
+                <a href="https://facebook.com"><img src="images/f.png" alt=""></a>
+                <a href="https://google.com"><img src="images/g.png" alt=""></a>
+                <a href="https://linkedin.com"><img src="images/l.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const menu = document.querySelector(".menu");
+        const hamburger = document.getElementById("hamburger");
+
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle("show");
+        });
+    </script>
+</body>
+</html>
